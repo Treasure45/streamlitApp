@@ -1,0 +1,47 @@
+﻿**********************
+Début de la transcription Windows PowerShell
+Heure de début : 20231113161654
+Nom d'utilisateur : BIPA\KON
+Utilisateur runAs :  BIPA\KON
+Nom de la configuration : 
+Ordinateur : PCBIPA-KON (Microsoft Windows NT 10.0.19045.0)
+Application hôte : C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\kon\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\browser\media\shellIntegration.ps1" } catch {}
+ID de processus : 22308
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcription démarrée, le fichier de sortie est C:\Users\kon\Documents\destination\\backup_transcript_2023-11-13.txt
+PS>Erreur de terminaison (Join-Path) : « Impossible de trouver un paramètre positionnel acceptant l'argument « + ». »
+Join-Path : Impossible de trouver un paramètre positionnel acceptant l'argument « + ».
+Au caractère \\SRVFIC\BUREAUTIQUE\kon\tmpKoff\scripts\Backup\backup.ps1:50 : 19
++ ... ackupPath = Join-Path $backupRoot (Split-Path $path -Leaf) + "_$date" ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument : (:) [Join-Path], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.JoinPathCommand
+Join-Path : Impossible de trouver un paramètre positionnel acceptant l'argument « + ».
+Au caractère \\SRVFIC\BUREAUTIQUE\kon\tmpKoff\scripts\Backup\backup.ps1:50 : 19
++ ... ackupPath = Join-Path $backupRoot (Split-Path $path -Leaf) + "_$date" ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument : (:) [Join-Path], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.JoinPathCommand
+
+DÃ©but de la sauvegarde pour C:\Users\kon\Documents vers
+PS>Erreur de terminaison (Copy-Item) : « L’exécution de la commande s’est arrêtée, car la variable de préférence « ErrorActionPreference » ou le paramètre courant a la valeur Stop : L'accès au chemin d'accès 'C:\Users\kon\Documents\Ma musique' est refusé. »
+>> Erreur de terminaison (Copy-Item) : « L’exécution de la commande s’est arrêtée, car la variable de préférence « ErrorActionPreference » ou le paramètre courant a la valeur Stop : L'accès au chemin d'accès 'C:\Users\kon\Documents\Ma musique' est refusé. »
+>> Erreur de terminaison (Copy-Item) : « L’exécution de la commande s’est arrêtée, car la variable de préférence « ErrorActionPreference » ou le paramètre courant a la valeur Stop : L'accès au chemin d'accès 'C:\Users\kon\Documents\Ma musique' est refusé. »
+>> Erreur de terminaison (Copy-Item) : « L’exécution de la commande s’est arrêtée, car la variable de préférence « ErrorActionPreference » ou le paramètre courant a la valeur Stop : L'accès au chemin d'accès 'C:\Users\kon\Documents\Ma musique' est refusé. »
+L’exécution de la commande s’est arrêtée, car la variable de préférence « ErrorActionPreference » ou le paramètre courant a la valeur Stop : L'accès au chemin d'accès 'C:\Users\kon\Documents\Ma musique' est refusé.
+Copy-Item : L'accès au chemin d'accès 'C:\Users\kon\Documents\Ma musique' est refusé.
+Au caractère \\SRVFIC\BUREAUTIQUE\kon\tmpKoff\scripts\Backup\backup.ps1:25 : 5
++     Copy-Item -Path $sourcePath -Destination $backupPath -Recurse -Fo ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (Ma musique:DirectoryInfo) [Copy-Item], UnauthorizedAccessException
+    + FullyQualifiedErrorId : CopyDirectoryInfoItemUnauthorizedAccessError,Microsoft.PowerShell.Commands.CopyItemCommand
+
+]633;E;.\x5cbackup.ps1;39fdfcc2-8c8e-4e80-95ab-5783e7285e19]633;D;1]633;A]633;P;Cwd=\x5c\x5cSRVFIC\x5cBUREAUTIQUE\x5ckon\x5ctmpKoff\x5cscripts\x5cBackupPS Microsoft.PowerShell.Core\FileSystem::\\SRVFIC\BUREAUTIQUE\kon\tmpKoff\scripts\Backup> ]633;B

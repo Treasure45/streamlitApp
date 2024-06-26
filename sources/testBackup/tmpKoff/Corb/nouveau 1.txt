@@ -1,0 +1,6 @@
+TableSupprimeTout(TABLE_REQ_lotPnx_lancement)
+
+POUR TOUTE LIGNE DE TABLE_REQ_lotPnx_lancement
+	TableAjouteLigne(TABLE_REQ_lotPnx_lancement,debitPNX.lot, debitPNX.commande, debitPNX.systeme, debitPNX.repere, debitPNX.num_rempl, debitPNX.ref_panx,debitPNX.dimensions, 
+	debitPNX.informations, debitPNX.qte, debitPNX.debitFait, debitPNX.dlivr)
+FIN
